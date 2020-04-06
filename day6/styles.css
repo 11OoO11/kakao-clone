@@ -1,0 +1,96 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  margin: 0;
+  height: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.box1 {
+  width: 700px;
+  height: 525px;
+  background-color: rgb(96, 202, 202);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fakebox1 {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(96, 202, 202, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  animation: 1s delayrotation ease-in-out infinite;
+}
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50px;
+}
+@keyframes delayrotation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: none;
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+.box2 {
+  width: 700px;
+  height: 525px;
+  background-color: rgb(38, 151, 136);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fakebox2 {
+  width: 90px;
+  height: 100px;
+  background-color: rgba(96, 202, 202, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+.stick {
+  width: 12px;
+  height: 40px;
+  background-color: white;
+  animation: 1.5s verticalstretch ease-in-out infinite;
+}
+#one {
+  animation-delay: 0s;
+}
+#two {
+  animation-delay: 0.125s;
+}
+#three {
+  animation-delay: 0.25s;
+}
+#four {
+  animation-delay: 0.375s;
+}
+#five {
+  animation-delay: 0.5s;
+}
+@keyframes verticalstretch {
+  0% {
+    transform: none;
+  }
+  20% {
+    transform: scaleY(2.5);
+  }
+  50% {
+    transform: none;
+  }
+  100% {
+    transform: none;
+  }
+}
