@@ -8,6 +8,7 @@
       src="https://kit.fontawesome.com/319cfcb848.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <div class="status-bar">
@@ -18,8 +19,8 @@
         <i class="fas fa-clock"></i>
         <i class="fas fa-volume-mute"></i>
         <i class="fas fa-wifi"></i>
-        <i class="fas fa-battery-full"></i>
         <span class="status-bar__battery-level">100%</span>
+        <i class="fas fa-battery-full"></i>
       </div>
     </div>
     <header class="header">
@@ -42,17 +43,29 @@
       <ul class="chats__list">
         <li class="chats__chat chat">
           <a href="chat.html">
-            <div class="chat__column">
-              <div class="chat__content">
-                <img class="chat__pengsu g-avatar" src="images/pengsu.jpg" />
-                <span class="chat__username">
-                  Pengsu
-                </span>
-                <span class="chat__preview">Going home</span>
+            <div class="chats__chat friend friend--lg">
+              <div class="friend__column">
+                <img
+                  src="images/pengsu.jpg"
+                  class="m-avatar friend__avatar"
+                  width="200px"
+                />
+                <div class="friend__content">
+                  <span class="friend__name">
+                    PengSu
+                  </span>
+                  <span class="friend__bottom-text">
+                    ebs.co
+                  </span>
+                </div>
               </div>
-            </div>
-            <div class="chat__column">
-              <span class="chat__timestamp">Yesterday</span>
+              <div class="friend__culumn">
+                <div class="friend__now-listening">
+                  <span class="chat__timestamp">
+                    March 8
+                  </span>
+                </div>
+              </div>
             </div>
           </a>
         </li>
@@ -67,6 +80,7 @@
         </li>
         <li class="nav__list-item">
           <a href="index.html" class="nav__list-link">
+            <div class="nav__badge">8</div>
             <i class="fas fa-comment"></i>
           </a>
         </li>

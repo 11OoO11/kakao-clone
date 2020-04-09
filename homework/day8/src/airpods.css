@@ -1,0 +1,48 @@
+.box:nth-child(1) {
+  height: 595px;
+  padding: 40px 30px;
+}
+.airpods {
+  height: 300px;
+  width: 300px;
+}
+.describe {
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  font-size: 25px;
+  color: #25252a;
+  font-weight: 600;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.content {
+  font-size: 20px;
+  color: #25252a;
+  opacity: 60%;
+  line-height: 1.5;
+  margin-bottom: 35px;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+.info__price {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.info__stars i {
+  color: #febd51;
+  font-size: 18px;
+}
+.info__stars i:nth-of-type(5) {
+  color: #d6dee4;
+}
+.info__stars .number {
+  color: #25252a;
+  opacity: 60%;
+  font-size: 14px;
+  margin-left: 5px;
+}
