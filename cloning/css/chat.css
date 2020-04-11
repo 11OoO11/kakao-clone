@@ -45,6 +45,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 0px 20px;
   padding-top: 30px;
 }
@@ -60,11 +61,8 @@
 }
 .message {
   display: flex;
-  align-items: center;
-  width: 50%;
-}
-.message .message__content {
-  width: 80%;
+  align-items: flex-start;
+  margin-bottom: 20px;
 }
 .incoming-message {
   align-self: flex-start;
@@ -75,11 +73,28 @@
 .incoming-message img {
   width: 30px;
   border-radius: 15px;
-  margin-right: 20px;
+  margin-right: 15px;
 }
 .message .message__bubble {
   background-color: white;
-  box-shadow: 0 10px 21px #e7eeef;
+  box-shadow: 0 10px 21px #d6dbdb;
   padding: 10px 20px;
   border-radius: 30px;
+  display: block;
+  font-weight: 600;
+  color: white;
+}
+.incoming-message .message__author {
+  margin-top: 10px;
+  display: block;
+  font-weight: 600;
+  font-size: 12px;
+}
+.incoming-message .message__bubble {
+  border-bottom-left-radius: 0px;
+  background-image: linear-gradient(to right, #00b4db, #0083b0);
+}
+.sent-message .message__bubble {
+  border-bottom-right-radius: 0px;
+  background-image: linear-gradient(to left, #00b4db, #0083b0);
 }
