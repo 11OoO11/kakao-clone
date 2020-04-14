@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Comic Neue", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.screen {
+  width: 670px;
+  height: 260px;
+  background-color: #fcfcfc;
+  margin: 5px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.polaroid-color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 180px;
+  background-color: #5bc4bd;
+}
+img {
+  background-color: rgb(255, 253, 253);
+  width: 90px;
+  height: 90px;
+  border-radius: 20px;
+  transition: all 0.5s ease-in-out;
+}
+.polaroid-black {
+  width: 240px;
+  height: 180px;
+  background-color: rgb(30, 30, 44);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  opacity: 0;
+  transition: all 0.3s ease-in;
+}
+.polaroid-black:hover {
+  transform: translate(10px, 10px);
+  opacity: 1;
+}
+.title {
+  font-size: 15px;
+  color: whitesmoke;
+  font-weight: 700;
+}
+.author {
+  font-size: 11px;
+  color: rgb(224, 39, 64);
+  margin-top: 3px;
+}
+.btn {
+  width: 65px;
+  height: 20px;
+  background-color: rgb(224, 39, 64);
+  font-size: 11px;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.laptop {
+  width: 240px;
+  height: 180px;
+  overflow: hidden;
+  position: relative;
+}
+.laptop-color {
+  background-color: #f8a3a0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 180px;
+}
+
+.laptop-color:hover + .laptop-black {
+  bottom: 0;
+}
+.laptop-color:hover > .laptop__img {
+  transform: translateY(-33px);
+}
+.laptop-black {
+  width: 240px;
+  height: 65px;
+  background-color: rgb(30, 30, 44);
+  position: absolute;
+  bottom: -65px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  transition: all 0.5s ease-in-out;
+}
+.black-column {
+  display: flex;
+  flex-direction: column;
+}
+.compass-black {
+  width: 240px;
+  height: 180px;
+  background-color: rgb(30, 30, 44);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  align-items: flex-end;
+}
+.compass-color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 240px;
+  height: 180px;
+  background-color: #d6f0f9;
+  transition: all 0.5s ease-in-out;
+}
+.compass-color:hover {
+  transform: scale(0.5, 0.5) translateY(-60px);
+}
